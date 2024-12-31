@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b6b2b658dc6ae9ecb1c0a8cdee6121cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b6b2b658dc6ae9ecb1c0a8cdee6121cc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b6b2b658dc6ae9ecb1c0a8cdee6121cc = L.map(
+                "map_b6b2b658dc6ae9ecb1c0a8cdee6121cc",
+                {
+                    center: [4.2105, 101.9758],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_532deca7ae4292a15ff6dfe3c33afe61 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_532deca7ae4292a15ff6dfe3c33afe61.addTo(map_b6b2b658dc6ae9ecb1c0a8cdee6121cc);
+        
+    
+            var feature_group_c9ad5e8de08cedd202e3beb5d83e6d18 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_7fc3862d64c393ff2ba36c7f6da8a6fb = L.marker(
+                [3.15785, 101.71144],
+                {
+}
+            ).addTo(feature_group_c9ad5e8de08cedd202e3beb5d83e6d18);
+        
+    
+            var icon_d43eae53fbb82e43fc63ee18ef61e269 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7fc3862d64c393ff2ba36c7f6da8a6fb.setIcon(icon_d43eae53fbb82e43fc63ee18ef61e269);
+        
+    
+        var popup_2d75e8a564d1f273b26db73a02abf534 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23d6179e8a77fcbd177a2d1de2e908d5 = $(`<div id="html_23d6179e8a77fcbd177a2d1de2e908d5" style="width: 100.0%; height: 100.0%;"><strong>Petronas Towers</strong><br>Iconic twin skyscrapers in Kuala Lumpur.</div>`)[0];
+                popup_2d75e8a564d1f273b26db73a02abf534.setContent(html_23d6179e8a77fcbd177a2d1de2e908d5);
+            
+        
+
+        marker_7fc3862d64c393ff2ba36c7f6da8a6fb.bindPopup(popup_2d75e8a564d1f273b26db73a02abf534)
+        ;
+
+        
+    
+    
+            var marker_f0aaa8e49cef70285094e02b0c531820 = L.marker(
+                [5.4141, 100.3288],
+                {
+}
+            ).addTo(feature_group_c9ad5e8de08cedd202e3beb5d83e6d18);
+        
+    
+            var icon_e8db629f2028ef58e3a95ccc4e0516d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f0aaa8e49cef70285094e02b0c531820.setIcon(icon_e8db629f2028ef58e3a95ccc4e0516d4);
+        
+    
+        var popup_1d9c65e70e8fd5b8e82e04e3de351873 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c53bb5fd52a6eaf18483fd807098d421 = $(`<div id="html_c53bb5fd52a6eaf18483fd807098d421" style="width: 100.0%; height: 100.0%;"><strong>George Town</strong><br>Historic city with colonial architecture in Penang.</div>`)[0];
+                popup_1d9c65e70e8fd5b8e82e04e3de351873.setContent(html_c53bb5fd52a6eaf18483fd807098d421);
+            
+        
+
+        marker_f0aaa8e49cef70285094e02b0c531820.bindPopup(popup_1d9c65e70e8fd5b8e82e04e3de351873)
+        ;
+
+        
+    
+    
+            var marker_7818fb160c2fe0798370519bd95adbdf = L.marker(
+                [5.3983, 100.2736],
+                {
+}
+            ).addTo(feature_group_c9ad5e8de08cedd202e3beb5d83e6d18);
+        
+    
+            var icon_6aa242a53557f30dad25794493f1d094 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7818fb160c2fe0798370519bd95adbdf.setIcon(icon_6aa242a53557f30dad25794493f1d094);
+        
+    
+        var popup_e1728f9c20241046aa20c1f4655f721d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_524af2a3d7ac9549c81812f5e296dc8e = $(`<div id="html_524af2a3d7ac9549c81812f5e296dc8e" style="width: 100.0%; height: 100.0%;"><strong>Kek Lok Si Temple</strong><br>Large Buddhist temple complex in Penang.</div>`)[0];
+                popup_e1728f9c20241046aa20c1f4655f721d.setContent(html_524af2a3d7ac9549c81812f5e296dc8e);
+            
+        
+
+        marker_7818fb160c2fe0798370519bd95adbdf.bindPopup(popup_e1728f9c20241046aa20c1f4655f721d)
+        ;
+
+        
+    
+    
+            feature_group_c9ad5e8de08cedd202e3beb5d83e6d18.addTo(map_b6b2b658dc6ae9ecb1c0a8cdee6121cc);
+        
+    
+            var feature_group_9e35b9820e096dd9df53f76d02645300 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_3d9cb6c899d08e3b9d432b5fd0f2386f = L.marker(
+                [3.23787, 101.68371],
+                {
+}
+            ).addTo(feature_group_9e35b9820e096dd9df53f76d02645300);
+        
+    
+            var icon_c2ed8f67d6b5ed8a82bf3bc107bf9912 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3d9cb6c899d08e3b9d432b5fd0f2386f.setIcon(icon_c2ed8f67d6b5ed8a82bf3bc107bf9912);
+        
+    
+        var popup_cd5cc96a917046ecced777feec4dd083 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_818658f79c28673669c1b6883505f0dc = $(`<div id="html_818658f79c28673669c1b6883505f0dc" style="width: 100.0%; height: 100.0%;"><strong>Batu Caves</strong><br>Limestone hill with caves and temples.</div>`)[0];
+                popup_cd5cc96a917046ecced777feec4dd083.setContent(html_818658f79c28673669c1b6883505f0dc);
+            
+        
+
+        marker_3d9cb6c899d08e3b9d432b5fd0f2386f.bindPopup(popup_cd5cc96a917046ecced777feec4dd083)
+        ;
+
+        
+    
+    
+            var marker_61826f3009277ec5490f8dbfd65018af = L.marker(
+                [6.381, 99.7333],
+                {
+}
+            ).addTo(feature_group_9e35b9820e096dd9df53f76d02645300);
+        
+    
+            var icon_8c44dcd675a1e26756b0eabaa27887da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_61826f3009277ec5490f8dbfd65018af.setIcon(icon_8c44dcd675a1e26756b0eabaa27887da);
+        
+    
+        var popup_ecd1a60affe65177b2a1261eb1bdae03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8fa41f4e5df02bfb6fa58577fa50d89 = $(`<div id="html_e8fa41f4e5df02bfb6fa58577fa50d89" style="width: 100.0%; height: 100.0%;"><strong>Langkawi Sky Bridge</strong><br>Curved pedestrian bridge on Langkawi Island.</div>`)[0];
+                popup_ecd1a60affe65177b2a1261eb1bdae03.setContent(html_e8fa41f4e5df02bfb6fa58577fa50d89);
+            
+        
+
+        marker_61826f3009277ec5490f8dbfd65018af.bindPopup(popup_ecd1a60affe65177b2a1261eb1bdae03)
+        ;
+
+        
+    
+    
+            var marker_2c432998cc5032c9cc9ddab25fc5aa49 = L.marker(
+                [6.075, 116.55864],
+                {
+}
+            ).addTo(feature_group_9e35b9820e096dd9df53f76d02645300);
+        
+    
+            var icon_5fa02a1c34f91337b7b9e1a01ffe20ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2c432998cc5032c9cc9ddab25fc5aa49.setIcon(icon_5fa02a1c34f91337b7b9e1a01ffe20ec);
+        
+    
+        var popup_de8b0695d251564535f764b506762a8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b34ed5818c65a4ece0e0dfc0f9a76163 = $(`<div id="html_b34ed5818c65a4ece0e0dfc0f9a76163" style="width: 100.0%; height: 100.0%;"><strong>Mount Kinabalu</strong><br>Highest peak in Malaysia, located in Sabah.</div>`)[0];
+                popup_de8b0695d251564535f764b506762a8c.setContent(html_b34ed5818c65a4ece0e0dfc0f9a76163);
+            
+        
+
+        marker_2c432998cc5032c9cc9ddab25fc5aa49.bindPopup(popup_de8b0695d251564535f764b506762a8c)
+        ;
+
+        
+    
+    
+            var marker_b6ea8500dc3355facd600e18eae2274a = L.marker(
+                [4.4701, 101.3768],
+                {
+}
+            ).addTo(feature_group_9e35b9820e096dd9df53f76d02645300);
+        
+    
+            var icon_f4de5098ddffb78d62a16a07d2bc2f4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b6ea8500dc3355facd600e18eae2274a.setIcon(icon_f4de5098ddffb78d62a16a07d2bc2f4e);
+        
+    
+        var popup_3f85794c47c3669865fead131267838a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_861b0976e434cb72ef12c6f8f4a6228a = $(`<div id="html_861b0976e434cb72ef12c6f8f4a6228a" style="width: 100.0%; height: 100.0%;"><strong>Cameron Highlands</strong><br>Cool hill station with tea plantations and hiking trails.</div>`)[0];
+                popup_3f85794c47c3669865fead131267838a.setContent(html_861b0976e434cb72ef12c6f8f4a6228a);
+            
+        
+
+        marker_b6ea8500dc3355facd600e18eae2274a.bindPopup(popup_3f85794c47c3669865fead131267838a)
+        ;
+
+        
+    
+    
+            var marker_f8a36ecee5bed9d1d67c73be5cb4084e = L.marker(
+                [4.5021, 102.4018],
+                {
+}
+            ).addTo(feature_group_9e35b9820e096dd9df53f76d02645300);
+        
+    
+            var icon_29e1f07bd2f47a51a061c4db594b60cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f8a36ecee5bed9d1d67c73be5cb4084e.setIcon(icon_29e1f07bd2f47a51a061c4db594b60cb);
+        
+    
+        var popup_6b8407eecda7c7d7f264a6a50a942381 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38a2f4bab217b58e250d86dadcd3ec74 = $(`<div id="html_38a2f4bab217b58e250d86dadcd3ec74" style="width: 100.0%; height: 100.0%;"><strong>Taman Negara</strong><br>One of the oldest rainforests in the world.</div>`)[0];
+                popup_6b8407eecda7c7d7f264a6a50a942381.setContent(html_38a2f4bab217b58e250d86dadcd3ec74);
+            
+        
+
+        marker_f8a36ecee5bed9d1d67c73be5cb4084e.bindPopup(popup_6b8407eecda7c7d7f264a6a50a942381)
+        ;
+
+        
+    
+    
+            feature_group_9e35b9820e096dd9df53f76d02645300.addTo(map_b6b2b658dc6ae9ecb1c0a8cdee6121cc);
+        
+    
+            var feature_group_ba7236353351023279f1421caa92eb7a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_384fc7da25ae486527f595f461a90122 = L.marker(
+                [3.07313, 101.60778],
+                {
+}
+            ).addTo(feature_group_ba7236353351023279f1421caa92eb7a);
+        
+    
+            var icon_b24ae6af5ec698905189a718b678eb6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_384fc7da25ae486527f595f461a90122.setIcon(icon_b24ae6af5ec698905189a718b678eb6a);
+        
+    
+        var popup_e2b5ca10a1ce33820d2867269ee5e750 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a722e39a6362846c868c57926cffe79a = $(`<div id="html_a722e39a6362846c868c57926cffe79a" style="width: 100.0%; height: 100.0%;"><strong>Sunway Lagoon</strong><br>Popular theme park with water rides and attractions.</div>`)[0];
+                popup_e2b5ca10a1ce33820d2867269ee5e750.setContent(html_a722e39a6362846c868c57926cffe79a);
+            
+        
+
+        marker_384fc7da25ae486527f595f461a90122.bindPopup(popup_e2b5ca10a1ce33820d2867269ee5e750)
+        ;
+
+        
+    
+    
+            var marker_8e0c29050ef3ae3790a4a418fa92c2b3 = L.marker(
+                [1.4264, 103.6298],
+                {
+}
+            ).addTo(feature_group_ba7236353351023279f1421caa92eb7a);
+        
+    
+            var icon_a745effcfbf6530e324175e25165ad6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8e0c29050ef3ae3790a4a418fa92c2b3.setIcon(icon_a745effcfbf6530e324175e25165ad6d);
+        
+    
+        var popup_5ae46ad2235a743bb3db10f7d626a467 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6c3bd7761cc2271d02a83a850bcb3b0 = $(`<div id="html_a6c3bd7761cc2271d02a83a850bcb3b0" style="width: 100.0%; height: 100.0%;"><strong>Legoland Malaysia</strong><br>Theme park with Lego-themed attractions in Johor.</div>`)[0];
+                popup_5ae46ad2235a743bb3db10f7d626a467.setContent(html_a6c3bd7761cc2271d02a83a850bcb3b0);
+            
+        
+
+        marker_8e0c29050ef3ae3790a4a418fa92c2b3.bindPopup(popup_5ae46ad2235a743bb3db10f7d626a467)
+        ;
+
+        
+    
+    
+            feature_group_ba7236353351023279f1421caa92eb7a.addTo(map_b6b2b658dc6ae9ecb1c0a8cdee6121cc);
+        
+    
+            var layer_control_29f8e685f0a584a6d46c08f20bbfe739_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_532deca7ae4292a15ff6dfe3c33afe61,
+                },
+                overlays :  {
+                    "Historical Sites" : feature_group_c9ad5e8de08cedd202e3beb5d83e6d18,
+                    "Natural Wonders" : feature_group_9e35b9820e096dd9df53f76d02645300,
+                    "Amusement Parks" : feature_group_ba7236353351023279f1421caa92eb7a,
+                },
+            };
+            let layer_control_29f8e685f0a584a6d46c08f20bbfe739 = L.control.layers(
+                layer_control_29f8e685f0a584a6d46c08f20bbfe739_layers.base_layers,
+                layer_control_29f8e685f0a584a6d46c08f20bbfe739_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_b6b2b658dc6ae9ecb1c0a8cdee6121cc);
+
+        
+    
+            var marker_0df0b05c5df7c69487f05e0d119c99d9 = L.marker(
+                [4.2105, 101.9758],
+                {
+}
+            ).addTo(map_b6b2b658dc6ae9ecb1c0a8cdee6121cc);
+        
+    
+            var icon_f8f8a5a0b779053aecc5fb746bed1641 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0df0b05c5df7c69487f05e0d119c99d9.setIcon(icon_f8f8a5a0b779053aecc5fb746bed1641);
+        
+    
+        var popup_92b27ac178d446665cc57a8e8817b6e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7885c5b657f5d497adb30b9d7fcb0842 = $(`<div id="html_7885c5b657f5d497adb30b9d7fcb0842" style="width: 100.0%; height: 100.0%;">Total Tourist Attractions: 10</div>`)[0];
+                popup_92b27ac178d446665cc57a8e8817b6e4.setContent(html_7885c5b657f5d497adb30b9d7fcb0842);
+            
+        
+
+        marker_0df0b05c5df7c69487f05e0d119c99d9.bindPopup(popup_92b27ac178d446665cc57a8e8817b6e4)
+        ;
+
+        
+    
+</script>
+</html>
